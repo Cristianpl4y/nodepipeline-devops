@@ -13,7 +13,7 @@ phases:
     commands:
       - echo Compilação iniciada..
       - echo Criando a imagem do Docker...
-      - docker build -t nodepipeline-devops .
+      - docker build -t nodepipeline-devops --progress=plain
       - docker tag nodepipeline-devops:latest 169087265228.dkr.ecr.us-east-1.amazonaws.com/nodepipeline-devops:latest
       
   post_build:
